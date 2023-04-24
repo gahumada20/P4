@@ -1,0 +1,294 @@
+/*DEVELOPER George Ahumada, IS117-006, Spring 2023 */
+
+* {
+	margin: auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+/* Header styles */
+header {
+	margin-bottom: 20px;
+}
+
+/* Main styles */
+main {
+	margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #333;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+@media (max-width: 991px) {
+	.nav-item-margin {
+		margin-right: 0;
+	}
+}
+/* Navbar styles */
+.navbar {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	background-color: #333;
+	color: #333;
+}
+
+.navbar-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.nav-link{
+	color: #fff;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.nav-link:hover{
+	color: #ffc107;
+}
+.navbar-brand {
+	margin-right: 50px;
+}
+
+.nav-brand img{
+	max-width: 100%;
+	height: auto;
+}
+
+.navbar-toggler {
+	border: none;
+}
+
+.navbar-toggler-icon {
+	background-color: #f8f9fa;
+}
+
+.navbar-nav {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	margin: 0 auto;
+}
+
+.nav-item {
+	position: relative;
+}
+
+.nav-item-margin{
+	margin-right: 50px;
+}
+
+.dropdown{
+	position: relative;
+}
+
+.dropdown-menu {
+	display:none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1.1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #d41313;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+a.dropdown-item{
+	color:#333
+}
+.dropdown-item{
+	color:#333;
+	font-size: 1.1rem;
+}
+
+.dropdown-item:hover {
+	color: #333;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu > .dropdown > a.btn {
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-menu > .dropdown > a.btn:hover {
+	background-color: #7db3e8;
+	color: #212529; 
+}
+
+.dropdown-menu > .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin: 0 0 0.125rem;
+    border-radius: 0;
+}
+.form-inline {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.form-inline input {
+	width: 150px;
+}
+
+.btn-outline-success {
+	font-size: 0.7rem;
+	padding: 0.25rem 0.4rem;
+}
+
+.search-form{
+	margin-right: 20px;
+}
+
+main {
+    margin-bottom:20px;
+}
+
+#beats ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#beats li {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+#beats li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#beats a{
+	color: #CC7722;
+}
+
+#beats li img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#beats li p {
+    margin-top: 10px;
+}
+
+#pricing-plans {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4; 
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#pricing-plans h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#pricing-plans .plans {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#pricing-plans .plan {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+#pricing-plans .plan:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#pricing-plans h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#pricing-plans ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+#pricing-plans li {
+    margin-bottom: 5px;
+}
+
+#pricing-plans a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #CC7722;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#pricing-plans a:hover {
+    background-color: #aa5b14;
+}
+
+.footer {
+	background-color: #343a40;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+	position: fixed;
+}
+@media (max-width: 768px) {
+	.navbar-nav .nav-item {
+		margin-right: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+	.video iframe {
+		width: 100%;
+		height: auto;
+  }
+}
